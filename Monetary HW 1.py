@@ -35,12 +35,12 @@ def solve_phi_next(phi_t, e1, e2, mt, beta, sigma):
 
 
 st.sidebar.header("Model Parameters")
-e1 = st.sidebar.slider(r"$e_1$ (Endowment Young)", 5.0, 20.0, 10.0, 1.0)
-e2 = st.sidebar.slider(r"$e_2$ (Endowment Old)", 0.0, 15.0, 2.0, 0.5)
-mt = st.sidebar.slider(r"$m_t$ (Money Supply $M$)", 0.1, 10.0, 1.0, 0.1)
-beta = st.sidebar.slider(r"$\beta$ (Discount Factor)", 0.1, 1.0, 0.9, 0.05)
-sigma = st.sidebar.slider(r"$\sigma$ (CRRA parameter)", 0.1, 5.0, 1.0, 0.1)
-phi1 = st.sidebar.slider(r"$\phi_1$ (Initial Value of Money)", 0.01, 5.0, 0.2, 0.05)
+e1 = st.sidebar.slider(r"$e_1$ (Endowment Young)", 0.0, 20.0, 10.0, 0.1)
+e2 = st.sidebar.slider(r"$e_2$ (Endowment Old)", 0.0, 20.0, 0.0, 0.1)
+mt = st.sidebar.slider(r"$m_t$ (Money Supply $M$)", 0.0, 10.0, 1.0, 0.05)
+beta = st.sidebar.slider(r"$\beta$ (Discount Factor)", 0.0, 1.0, 1.0, 0.05)
+sigma = st.sidebar.slider(r"$\sigma$ (CRRA parameter)", -5.0, 5.0, 1.0, 0.1)
+phi1 = st.sidebar.slider(r"$\phi_1$ (Initial Value of Money)", 0.0, 5.0, 1.0, 0.05)
 
 # --- Plotting ---
 fig, ax = plt.subplots(figsize=(10, 7))
